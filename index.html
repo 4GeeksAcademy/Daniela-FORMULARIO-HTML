@@ -1,82 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Formulario HTML 5</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
+
 <body>
   <div class="container mt-5">
     <h1 class="text-center mb-4">EL CORTE INGLÉS VIAJES</h1>
 
-    <div class="alert alert-danger" role="alert">error xq faltan datos</div>
+    <div class="alert alert-danger" role="alert">Faltan datos</div>
 
     <form>
       <div class="row g-3">
-       
-          <div class="col-md-6">
-          <label for="tarjeta" class="form-label">Número de tarjeta para comprar mi vuelo a Ibiza </label>
-          <input 
-            type="text" 
-            class="form-control" 
-            id="tarjeta" 
-            placeholder="xxxxxxxxxxxxxxxx" 
-            inputmode="numeric" 
-            pattern="[0-9]*" 
-            maxlength="16"
-          </div>
+
+        <div class="col-md-6">
+          <label for="tarjeta" class="form-label">Tarjeta </label>
+          <input type="text" class="form-control" id="tarjeta" placeholder="xxxxxxxxxxxxxxxx" inputmode="numeric"
+            pattern="[0-9]*" maxlength="16" />
         </div>
-        
+
         <div class="col-md-3">
           <label for="codigo" class="form-label">Password</label>
-          <input 
-            type="password" 
-            class="form-control" 
-            id="codigo" 
-            placeholder="0000" 
-            inputmode="numeric" 
-            pattern="[0-9]*" 
-            maxlength="4"
-          </div>
+          <input type="password" class="form-control" id="codigo" placeholder="0000" inputmode="numeric"
+            pattern="[0-9]*" maxlength="4" />
         </div>
         <div class="col-md-3">
           <label for="cantidad" class="form-label">Cantidad</label>
           <input type="number" class="form-control" id="cantidad" placeholder="Cantidad" />
         </div>
-        
+      </div>
+
+      <div class="row">
         <div class="col-md-6">
-          <label for="nombre" class="form-label">Daniela</label>
+          <label for="nombre" class="form-label">Nombre</label>
           <input type="text" class="form-control" id="nombre" placeholder="Nombre" />
         </div>
-        
+
         <div class="col-md-6">
-          <label for="apellidos" class="form-label">Padilla</label>
+          <label for="apellidos" class="form-label">Apellido</label>
           <input type="text" class="form-control" id="apellidos" placeholder="Apellidos" />
         </div>
-        
-        <div class="col-md-6">
-          <label for="ciudad" class="form-label">Madrid</label>
-          <input type="text" class="form-control" id="ciudad" placeholder="Ciudad" />
-        </div>
-        
-        <div class="col-md-3">
-          <label for="pais" class="form-label">España</label>
-          <input type="text" class="form-control" id="pais" placeholder="País" />
-        </div>
-        
-        <div class="col-md-3">
-          <label for="cp" class="form-label">Código Postal</label>
-          <input type="number" class="form-control" id="cp" placeholder="Código Postal" />
-        </div>
-        
-        <div class="col-12">
-          <label for="mensaje" class="form-label">Mensaje</label>
-          <textarea class="form-control" id="mensaje" rows="3" placeholder="Escribe un mensaje..."></textarea>
-        </div>
-        
-        <div class="col-12">
+      </div>
+      <div class="row">
+      <div class="col-md-6">
+        <label for="ciudad" class="form-label">Ciudad</label>
+        <input type="text" class="form-control" id="ciudad" placeholder="Ciudad" />
+      </div>
+
+      <div class="col-md-3">
+        <label for="pais" class="form-label">País</label>
+        <input type="text" class="form-control" id="pais" placeholder="País" />
+      </div>
+
+      <div class="col-md-3">
+        <label for="cp" class="form-label">Código Postal</label>
+        <input type="number" class="form-control" id="cp" placeholder="Código Postal" />
+      </div>
+      </div>
+      <div class="row">
+
+        <div class="col-6">
           <label class="form-label d-block mb-2">Forma de pago:</label>
           <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="pago" id="mastercard" />
@@ -95,12 +84,19 @@
             <label class="form-check-label" for="paypal"><i class="fa-brands fa-paypal"></i></label>
           </div>
         </div>
-        
-        <div class="col-12 text-end mt-4">
-          <button type="reset" class="btn btn-secondary btn-sm">no se puede</button>
-          <button type="submit" class="btn btn-primary btn-sm">comprado</button>
+        <div class="col-6">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="mensaje" rows="3" placeholder="Escribe un mensaje..."></textarea>
         </div>
+
+      </div>
+      
+      <div class="col-12 text-end mt-4">
+        <button type="reset" class="btn btn-secondary btn-sm">Restablecer</button>
+        <button type="submit" class="btn btn-primary btn-sm">Enviar</button>
+      </div>
     </form>
   </div>
 </body>
+
 </html>
